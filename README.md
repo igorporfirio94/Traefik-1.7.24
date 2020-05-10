@@ -9,7 +9,7 @@ docker run -d \
   -p 80:80 \
   -p 443:443 \
   -l traefik.frontend.rule=Host:monitor.brasil-ip.net \
-  -l traefik.port=8080 \
+  -l traefik.port=80 \
   --network web \
   --name traefik \
   traefik:1.7.24
